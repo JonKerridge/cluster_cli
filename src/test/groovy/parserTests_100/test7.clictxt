@@ -1,4 +1,4 @@
-type= version, host= null, version = 1.0.9,   
+type= version, host= null, version = 1.0.10,   
 	nodes= 0, workers= 0, 
 	fixed IPs= [] 
 	emitParams= []
@@ -7,7 +7,7 @@ type= version, host= null, version = 1.0.9,
 	finalise params= [],
 	outFile= null,
 	allocIps= []
-type= emit, host= null, version = 1.0.9,   
+type= emit, host= null, version = 1.0.10,   
 	nodes= 2, workers= 2, 
 	fixed IPs= [] 
 	emitParams= [[int, int], [0, 100], [100, 200], [200, 300], [300, 400]]
@@ -16,7 +16,7 @@ type= emit, host= null, version = 1.0.9,
 	finalise params= [],
 	outFile= null,
 	allocIps= []
-type= work, host= null, version = 1.0.9,   
+type= work, host= null, version = 1.0.10,   
 	nodes= 2, workers= 4, 
 	fixed IPs= [] 
 	emitParams= []
@@ -25,7 +25,7 @@ type= work, host= null, version = 1.0.9,
 	finalise params= [],
 	outFile= null,
 	allocIps= []
-type= collect, host= null, version = 1.0.9,   
+type= collect, host= null, version = 1.0.10,   
 	nodes= 2, workers= 2, 
 	fixed IPs= [] 
 	emitParams= []

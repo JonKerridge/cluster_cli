@@ -5,7 +5,7 @@ plugins {
     id 'application'}
 
 group 'jonkerridge'
-version '1.0.9'
+version '1.0.10'
 //1.0.0 first working version that was tested with Mandelbrot and Concordance
 //1.0.1 improved means of invoking Host and Node processes
 //1.0.2 tested on real networks, further improvement in invoking host process
@@ -16,8 +16,12 @@ version '1.0.9'
 //1.0.7 documentation improved and created Java 8 version using Groovy3 for ENUCC
 //1.0.8 added a delay so that nodes wait until host has sufficient time to start.
 //1.0.9 added verbose to invoke to reduce amount of console output
+//1.0.10 corrected errors accessing local file systems for gradle properties and version control
 
-String propertyFileName = "C:/Github/gradle.properties"
+// The build file assumes the existence of a gradle properties file containing the
+//user's name and key in a file called "user.home"/.github/gradle.properties
+String userDir = System.getProperty("user.home")
+String propertyFileName = "$userDir/.github/gradle.properties"
 File propsFile = new File(propertyFileName)
 Properties props = new Properties()
 props.load(propsFile.newDataInputStream())

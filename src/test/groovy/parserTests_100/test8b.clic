@@ -1,4 +1,4 @@
-version 1.0.9
+version 1.0.10
 emit -nodes 2 -workers 2 -p int,int!0,100!100,200!200,300!300,400
 work -n 2 -w 4 -m updateMethod -p int!500
 collect -n 2 -w 2 -f Test7Results -cp int!1!2!3 -fp int!6!7!8

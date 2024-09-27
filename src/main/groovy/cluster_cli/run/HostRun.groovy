@@ -166,7 +166,7 @@ class HostRun {
 //    assert hostIP == nodeIP: "Expected hostIP: host does not match actual nodeIP $nodeIP"
 // get all nodes' IP addresses
     def fromNodes = NetChannel.numberedNet2One(1)
-    println "Host starting needing $totalNodes nodes; with $nodeIP using port $portNumber as host node; "
+    println "Host starting needing $totalNodes nodes; with $nodeIP using port $portNumber as host node; using software version $version"
     if (verbose) println "creating $totalWorkers internal processes and $requiredManagers manager processes"
     List<String> nodeIPstrings = []
 // assumes nodes have created the corresponding net input channels

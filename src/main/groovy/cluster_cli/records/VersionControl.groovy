@@ -1,5 +1,5 @@
 package cluster_cli.records
 
 class VersionControl {
-  static String versionTag = "1.0.9"
+  static String versionTag = "1.0.10"
 }
