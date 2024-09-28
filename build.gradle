@@ -5,7 +5,7 @@ plugins {
     id 'application'}
 
 group 'jonkerridge'
-version '1.0.10'
+version '1.0.11'
 //1.0.0 first working version that was tested with Mandelbrot and Concordance
 //1.0.1 improved means of invoking Host and Node processes
 //1.0.2 tested on real networks, further improvement in invoking host process

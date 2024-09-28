@@ -5,8 +5,10 @@ interface based on picocli.  The user has to supply two classes;
 one that defines the data to be processed and the other that 
 defines what happens to the final results of processing.
 
-This version of software has only been tested using a 
-local 127.0.0.0 type network.  
+The library has been compiled using Groovy 3 and Java 11
+
+This version of software has been tested using a 
+local 127.0.0.0 type network as well as real networks.  
 
 The LocalNode is used to run a single node of the cluster, 
 thus multiple instances of the nodes have to be initialised, 
@@ -121,7 +123,7 @@ When creating such a network the host node MUST be invoked first, followed by th
 The only difference when creating a node of a real cluster is that args[0] contains the IP address of the host
 and there is no args[1].
 
-Version 1.0.4 has been tested on a real network of workstations to form the cluster, 
+Versions 1.0.4+ have been tested on a real network of workstations to form the cluster, 
 using the Cluster Mandelbrot application (see https://github.com/JonKerridge/ClusterMandelbrot).
 
 testing involved creating NetHost.jar and NetNode.jar artifacts which could then be 
